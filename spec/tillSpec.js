@@ -9,6 +9,6 @@ describe('Till', function() {
   });
 
   it('starts on a balance of 0', function() {
-    expect(till.balance).toEqual(0);
+    expect(till.getCurrentBalance()).toEqual(0);
   });
 });
