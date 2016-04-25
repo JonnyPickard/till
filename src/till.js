@@ -21,5 +21,7 @@ Till.prototype.addCost = function(amount) {
 Till.prototype.addItem = function(item, amount) {
   if(!(item in this.foodList)) {
     throw new TypeError("This item doesn't exist");
+  } else {
+    this.items[item] = amount;
   }
 };
