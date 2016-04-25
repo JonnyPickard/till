@@ -17,4 +17,8 @@ describe('Till', function() {
     expect(till.getCurrentBalance()).toEqual(20);
   });
 
+  it('raises an error if an item is not on the menu', function() {
+    expect( function() { till.addItem("fake", 5); } ).toThrowError("This item doesn't exist")
+  });
+
 });
