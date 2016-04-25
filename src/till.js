@@ -5,3 +5,7 @@ function Till() {
 Till.prototype.getCurrentBalance = function() {
   return this.balance;
 };
+
+Till.prototype.addCost = function(amount) {
+  this.balance += amount;
+};
