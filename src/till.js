@@ -25,3 +25,7 @@ Till.prototype.addItem = function(item, amount) {
     this.items[item] = amount;
   }
 };
+
+Till.prototype.removeItem = function(item, amount) {
+  this.items[item] -= amount;
+};
