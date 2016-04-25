@@ -13,11 +13,13 @@ Till
    So that I can see the total tax,
    I would like the till to output a tax amount.
 
+4. As the owner,
+   So that I can change the menu,
+   I would like to be able to add items to the list.
+
 Ideas
 =====
 
-1. Remove item from list.
+1. Separate project with up + minify using grunt.
 
-2. Remove certain amount of items from list.
-
-3. Separate project with up + minify using grunt.
+2. Add items to list.
