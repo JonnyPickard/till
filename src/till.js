@@ -27,5 +27,9 @@ Till.prototype.addItem = function(item, amount) {
 };
 
 Till.prototype.removeItem = function(item, amount) {
-  this.items[item] -= amount;
+  if(!(item in this.items) || (this.items[item] - amount) < 0) {
+    throw new TypeError("This item doesn't exist");
+  } else {
+    this.items[item] -= amount;
+  }
 };

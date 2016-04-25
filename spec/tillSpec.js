@@ -32,4 +32,10 @@ describe('Till', function() {
     expect(till.items).not.toEqual({ pizza: 2});
   });
 
+  it('raises an error when trying to remove an item that is not on the bill', function() {
+    till.addItem("pizza", 4);
+    expect( function() { till.removeItem("pizza", 5); } ).toThrowError("This item doesn't exist");
+    expect( function() { till.removeItem("spaghetti", 2); } ).toThrowError("This item doesn't exist");
+  });
+
 });
