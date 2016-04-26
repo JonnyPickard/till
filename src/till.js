@@ -19,16 +19,13 @@ Menu.prototype.removeItem = function(item, price) {
   delete this.foodList[item];
 };
 
-function Till() {
+var menu = new Menu();
+
+function Till(Menu) {
   this.balance = 0;
   this.items = {};
 
-  this.foodList = {
-    pasta: 5,
-    pizza: 7,
-    burger: 8,
-    chips: 2,
-  };
+  this.foodList = menu.returnFoodList();
 }
 
 Till.prototype.getCurrentBalance = function() {
