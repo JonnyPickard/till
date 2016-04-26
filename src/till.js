@@ -1,3 +1,19 @@
+function Menu() {
+  this.foodList = {};
+}
+
+Menu.prototype.returnFoodList = function() {
+  return this.foodList;
+};
+
+Menu.prototype.addItem = function(item, price) {
+  this.foodList[item] = price;
+};
+
+Menu.prototype.removeItem = function(item, price) {
+  delete this.foodList[item];
+};
+
 function Till() {
   this.balance = 0;
   this.items = {};

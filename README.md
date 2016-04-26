@@ -23,3 +23,5 @@ Ideas
 1. Separate project with up + minify using grunt.
 
 2. Add items to list.
+
+3. Seperate money - food list - tax? 
