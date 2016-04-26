@@ -43,4 +43,14 @@ describe('Till', function() {
     expect(till.calculateTax()).toEqual(15*0.15);
   });
 
+  it('calculates the correct total bill', function() {
+    till.items = {
+      pasta: 1,
+      pizza: 2,
+      burger: 3,
+      chips: 4,
+    };
+    expect(till.calculateBill()).toEqual(58.65);
+  });
+
 });

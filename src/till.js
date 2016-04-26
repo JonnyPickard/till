@@ -55,3 +55,11 @@ Till.prototype.removeItem = function(item, amount) {
 Till.prototype.calculateTax = function() {
   return this.balance * 0.15;
 };
+
+Till.prototype.calculateBill = function() {
+  for (var key in this.items){
+    this.addCost(this.foodList[key] * this.items[key]);
+  }
+  this.addCost(this.calculateTax());
+  return this.getCurrentBalance();
+};
