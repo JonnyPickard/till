@@ -51,3 +51,7 @@ Till.prototype.removeItem = function(item, amount) {
     this.items[item] -= amount;
   }
 };
+
+Till.prototype.calculateTax = function() {
+  return this.balance * 0.15;
+};

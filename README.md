@@ -24,4 +24,4 @@ Ideas
 
 2. Add items to list.
 
-3. Seperate money - food list - tax? 
+3. Separate money - food list - tax? 

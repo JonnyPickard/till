@@ -38,4 +38,9 @@ describe('Till', function() {
     expect( function() { till.removeItem("spaghetti", 2); } ).toThrowError("This item doesn't exist");
   });
 
+  it('returns the correct amount of tax', function() {
+    till.balance = 15;
+    expect(till.calculateTax()).toEqual(15*0.15);
+  });
+
 });
