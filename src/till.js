@@ -1,5 +1,10 @@
 function Menu() {
-  this.foodList = {};
+  this.foodList = {
+    pasta: 5,
+    pizza: 7,
+    burger: 8,
+    chips: 2,
+  };
 }
 
 Menu.prototype.returnFoodList = function() {
