@@ -11,6 +11,15 @@ Menu.prototype.returnFoodList = function() {
   return this.foodList;
 };
 
+Menu.prototype.printFoodList = function() {
+  str = this.foodList;
+  for (var key in str) {
+    if (str.hasOwnProperty(key)) {
+      return(key + ": " + str[key]);
+    }
+  }
+};
+
 Menu.prototype.addItem = function(item, price) {
   this.foodList[item] = price;
 };
