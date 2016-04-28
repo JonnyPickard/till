@@ -21,3 +21,7 @@ Ideas
 =====
 
 1. Separate project with up + minify using grunt.
+
+2. Add feature tests.
+
+3. Test routes in Sinatra with RSpec.
